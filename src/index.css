@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+
+
+body {
+  @apply bg-beige-100 text-gray-800;
+}
