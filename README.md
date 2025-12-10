@@ -1,37 +1,38 @@
-# 🍰 Dessert AI Generator (Web-based LLM Application)
+# 🍰 Dessert AI Generator
 
-เว็บแอปพลิเคชันค้นหาและสร้างสรรค์สูตรของหวานอัจฉริยะ ขับเคลื่อนด้วยพลังของ **Google Gemini (LLM)** ออกแบบมาเพื่อคนรักขนมหวานโดยเฉพาะ พร้อมฟีเจอร์อำนวยความสะดวกตั้งแต่การคิดเมนูไปจนถึงขั้นตอนการทำ
 
-## ✨ Key Features (ฟีเจอร์หลัก)
+**Dessert AI Generator** is a web-based application designed to help users discover, create, and cook delicious desserts. It goes beyond simple recipe searching by using Generative AI to create custom recipes, adjust portions dynamically, and even recommend treats based on your mood.
+
+## ✨ Key Features
 
 ### 🤖 1. AI Recipe Generator & Validation
-* **Generative AI Core:** ใช้ LLM ในการ Generate วัตถุดิบและวิธีทำอย่างละเอียดจากชื่อเมนูที่ผู้ใช้ป้อน
-* **Smart Validation:** มีระบบตรวจสอบบริบท (Context Awareness) หากผู้ใช้ป้อนชื่อเมนูที่ไม่ใช่ของหวาน (เช่น ผัดกะเพรา, ยางลบ) AI จะปฏิเสธและแจ้งเตือนทันที ไม่ Generate สูตรมั่วๆ ออกมา
+* **Generative AI Core:** Instantly generates detailed ingredients and step-by-step cooking instructions based on the menu name provided.
+* **Smart Context Awareness:** Equipped with intelligent validation to ensure relevance. If a user inputs a non-dessert item (e.g., "Fried Rice" or random objects), the AI detects the context and refuses to generate a recipe, preventing hallucinated or incorrect outputs.
 
 ### 📌 2. Recipe Collection & Pinning
-* **History Log:** ระบบบันทึกประวัติการค้นหาเมนูที่เคย Generate ไปแล้ว แยกไว้อีกหน้า
-* **Favorites System:** ฟังก์ชันติดดาว/ปักหมุด (Pin) สูตรที่ชอบ เพื่อเก็บไว้ดูภายหลัง (UX คล้ายการจัดการรูปใน Gallery)
+* **History Log:** Automatically saves previously generated recipes in a dedicated history page.
+* **Favorites System:** Users can **"Pin"** or star their favorite recipes to keep them permanently in their personal gallery for quick access.
 
-### 🎭 3. Dessert Roulette (Mood-based Recommendation)
-* **Gamification:** ระบบสุ่มเมนูตามอารมณ์ความรู้สึก สำหรับวันที่นึกไม่ออกว่าจะทานอะไร
-* **Mood Analysis:** เลือกอารมณ์ได้ เช่น "อกหัก" (แนะนำช็อกโกแลตลาวาเยียวยาใจ) หรือ "เหนื่อยล้า" (แนะนำบิงซูสดชื่น) โดยใช้ AI วิเคราะห์รสชาติที่สัมพันธ์กับความรู้สึก
+### 🎭 3. Dessert Roulette (Mood-Based Recommendation)
+* **Mood Analysis:** Unsure what to eat? Select your current mood (e.g., "Heartbroken", "Exhausted", "Happy"), and the AI will analyze flavor profiles to recommend the perfect comfort dessert (e.g., Chocolate Lava for healing, Bingsu for refreshing).
 
 ### 🔢 4. Smart Portion Calculator
-* **Dynamic Scaling:** คำนวณปริมาณวัตถุดิบใหม่อัตโนมัติตามจำนวนคนทาน (Servings)
-* **Auto-Adjust:** กดเพิ่ม/ลดจำนวนคน แล้วปริมาณกรัม/ช้อนโต๊ะ จะคูณหรือหารให้อัตโนมัติ ไม่ต้องกดเครื่องคิดเลขเอง
+* **Dynamic Scaling:** Automatically recalculates ingredient quantities based on the desired number of servings.
+* **Auto-Adjust:** Simply increase or decrease the serving count, and the system instantly updates grams/tablespoons—no manual math required.
 
-### 👨‍🍳 5. Cooking View (Hands-free Mode)
-* **Optimized UI:** โหมดสำหรับขณะลงมือทำจริง ตัวหนังสือขยายใหญ่ อ่านง่ายจากระยะไกล
-* **Screen Awake:** สั่งล็อกหน้าจอไม่ให้ดับอัตโนมัติ ป้องกันมือเลอะแป้ง/เนยต้องมาคอยแตะจอ
+### 👨‍🍳 5. Cooking View (Hands-Free Mode)
+* **Optimized UI:** A simplified, large-text interface designed for readability from a distance while cooking.
+* **Screen Awake:** Prevents the device screen from turning off automatically, so you don't have to touch the screen with messy hands (flour/butter) to wake it up.
 
 ### 🛡️ 6. Allergy Filter System
-* **Safety First:** ระบบคัดกรองสารก่อภูมิแพ้ (เช่น ถั่ว, นม, แป้งสาลี)
-* **Alerts:** แจ้งเตือนตัวแดงหรือซ่อนเมนูที่มีความเสี่ยงตาม Profile ที่ผู้ใช้ตั้งค่าไว้
+* **Safety First:** Filters and highlights common allergens (e.g., Peanuts, Dairy, Gluten).
+* **Smart Alerts:** Warns users with red indicators or hides menus entirely based on their safety profile settings.
+
+---
 
 ## 🛠️ Tech Stack
+
 * **Frontend:** React, Vite
 * **AI Model:** Google Gemini API (Generative Language API)
 * **Styling:** Tailwind CSS
-* **State Management:** React Hooks & LocalStorage (สำหรับเก็บ History/Favorites)
-
----
+* **State Management:** React Hooks & LocalStorage (for History/Favorites persistence)
