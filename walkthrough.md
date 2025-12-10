@@ -1,7 +1,5 @@
 # Dessert Recipe App Walkthrough
 
-The Dessert Recipe App is now ready and running!
-
 ## How to Test
 
 1.  **Open the App**:
@@ -17,9 +15,8 @@ The Dessert Recipe App is now ready and running!
     - **Verify**: The app should show an error message saying it can only help with desserts.
 
 4.  **Test Favorites**:
+   
 # Dessert Recipe App Walkthrough
-
-The Dessert Recipe App is now ready and running!
 
 ## How to Test
 
@@ -56,8 +53,3 @@ The Dessert Recipe App is now ready and running!
     - Custom background pattern.
     - "Popular Desserts" quick access.
 
-## Troubleshooting
-- **API Error (404/403)**: Ensure your Google Cloud Project has the **"Generative Language API"** enabled and your API key has access to `gemini-1.5-flash`.
-- **Wake Lock**: The "Keep Screen On" feature in Cooking Mode works best in Chrome/Edge over HTTPS or localhost.
-- If the page doesn't load, try refreshing.
-- If you see a "PostCSS" error, ensure the server was restarted (I have already done this).
